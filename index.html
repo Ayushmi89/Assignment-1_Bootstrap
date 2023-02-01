@@ -1,0 +1,175 @@
+<html>
+
+<head>
+    <title>
+        Bootstrap assignment-1
+    </title>
+    <style>
+        .demo {
+            background-color: violet;
+            border: 10px solid gray;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="demo">
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-6">
+                <header>FORM</header>
+            </div>
+            <div class="col-6">
+                <header>TABLE</header>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <h1 style="font-size: large;">Student Registration Form</h1>
+                <form>
+                    <div class="mb-3">
+                        <div id="emailHelp" class="form-text">We'll never share your details with anyone else.</div>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="name">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="Phone" class="form-label">Phone Number</label>
+                        <input type="phone" class="form-control" id="phone" aria-describedby="phone">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob" aria-describedby="dob">
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="address" class="form-control" id="address" aria-describedby="address">
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender : </label><br>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                            <label class="form-check-label" for="exampleRadios1">
+                              Male
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Female
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                              Others
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown mb-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select City
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Delhi</a>
+                            <a class="dropdown-item" href="#">Punjab</a>
+                            <a class="dropdown-item" href="#">Goa</a>
+                            <a class="dropdown-item" href="#">Mumbai</a>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group mb-3">
+                        <label>Hobbies :</label><br>
+                        <label><input type="checkbox" value="">Reading</label><br>
+                        <label><input type="checkbox" value="">Writing</label><br>
+                        <label><input type="checkbox" value="">Sports</label><br>
+                        <label><input type="checkbox" value="">Traveling</label><br>
+                    </div>
+
+
+
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                </form>
+            </div>
+            <div class="col-6">
+
+
+                <table class="table table-striped table-bordered table-hover table-sm">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>S.No</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Gender</th>
+                            <th>City</th>
+                            <th>Hobbies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Ayush Mittal</td>
+                            <td>9876543212</td>
+                            <td>Male</td>
+                            <td>Delhi</td>
+                            <td>Travelling, Reading</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Kartik Kumar</td>
+                            <td>9876543289</td>
+                            <td>Male</td>
+                            <td>Goa</td>
+                            <td>Travelling, Cooking</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Gaurav Sharma</td>
+                            <td>9876543789</td>
+                            <td>Male</td>
+                            <td>Punjab</td>
+                            <td>Cricket, chess</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
